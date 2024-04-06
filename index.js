@@ -36,7 +36,7 @@ app.post('/api/shorturl', (req, res) => {
     dns.lookup(urlHost, (err) => {
 
         if (err) {
-            return res.status(400).json({ error: 'invalid url'});
+            return res.status(400).json({ error: 'Invalid URL'});
         }
 
         function generateUniqueId() {
